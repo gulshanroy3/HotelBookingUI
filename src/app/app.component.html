@@ -1,0 +1,76 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center;margin-top: 100px;margin-left: 40px">
+
+      <p class="text-left" style="color: #4441f4"><i class='fas fa-user-friends' style='font-size:28px;color:#4441f4'></i> Choose Number of <strong>People</strong></p>
+      
+      <div class="container px-lg-5" id="boredrContainer" >
+<div class="row" id="border">
+<div class="col-3">
+    <pre class="text-left" style="color: #4441f4"><i class='fa fa-bed' style='font-size:28px;color:#4441f4'></i> <strong>  ROOMS </strong></pre>
+    
+</div>
+<div class="col-6"></div>
+
+<div class="col-3">
+
+      <button type="button" class="btn btn-info btn-circle" (click)="RoomSub()" style="background: #4245f4;margin-right:20px "  [disabled]="roomSubDisable">
+          <i class="fas fa-minus"></i>
+      </button>
+   
+    {{this.roomNumber}}
+    
+    <button type="button" class="btn btn-info btn-circle" (click)="RoomAdd()" style="background: #a0233a;margin-left: 20px;"  [disabled]="roomAddDisable" >
+          <i class="fas fa-plus"></i>
+      </button>
+    </div>
+  
+</div>
+<br>
+<div class="row" id="border">
+  <div class="col-3">
+    <pre class="text-left" style="color: #4441f4"><i class='fas fa-user-friends' style='font-size:28px;color:#4441f4'></i> <strong>  ADULT</strong></pre>
+  </div>
+  <div class="col-6"></div>
+  <div class="col-3">
+
+      <button  type="button" class="btn btn-info btn-circle" (click)="AdultSub()" style="background: #4245f4; margin-right: 20px" [disabled]="AdultSubDisable" >
+          <i class="fas fa-minus"></i>
+      </button>
+   
+    {{this.Adult}}
+    
+    <button type="button" class="btn btn-info btn-circle" (click)="AdultAdd()"  style="background: #a0233a;margin-left: 20px;"  [disabled]="AdultAddDisable" >
+          <i class="fas fa-plus"></i>
+      </button>
+    </div>
+</div>
+<br>
+
+<div class="row">
+   <div class="col-3">
+  <pre class="text-left" style="color: #4441f4"><i class='fa fa-child' style='font-size:28px;color:#4441f4'></i><strong>  CHILDREN</strong></pre>
+</div>
+  <div class="col-6"></div>
+  <div class="col-3">
+    
+   
+      <button type="button" class="btn btn-info btn-circle" (click)="ChildSub()"  style="background: #4245f4;margin-right:20px" [disabled]="ChildSubDisable" >
+          <i class="fas fa-minus"></i>
+      </button>
+   
+    {{this.Child}}
+    
+    <button type="button" class="btn btn-info btn-circle" (click)="ChildAdd()" style="background: #a0233a;margin-left:20px"  [disabled]="ChildAddDisable" >
+          <i class="fas fa-plus"></i>
+      </button>
+    </div>
+</div>
+
+
+      </div>
+      </div>
+
+
+
+
+<router-outlet></router-outlet>
